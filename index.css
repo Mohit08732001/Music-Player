@@ -1,0 +1,607 @@
+/* Body css */
+body{
+    background-color: #0b1026;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+section{
+    padding-top: 50px;
+}
+/*NavBar CSS Starts*/
+nav #horizontal-list li{
+    display: inline;
+    margin-right: 3%;
+  
+}
+
+nav #horizontal-list #search{
+   padding-left: 50%;
+}
+
+nav #horizontal-list{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+}
+
+nav #horizontal-list li #profile{
+    border-radius: 30px;
+}
+
+#light-bg-color{
+    background-color: #11193e;
+    padding: 10px;
+}
+
+nav #horizontal-list li input{
+    background-color: #11193e;
+    border: 0;
+    margin-left: 4px;
+}
+
+/*NavBar CSS Ends*/
+
+main{
+    width: 70vw;
+    margin-left: 10%;
+}
+
+/*Carousel section CSS Start*/
+#carousel{
+    padding-top:0;
+    padding-bottom: 10%;
+}
+.slide-container{
+    width:69vw;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide-image{
+    top:20%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    position:absolute;
+    align-items: center; 
+    transition:1s ease-in-out;
+}
+
+.slide-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s ease-in-out;
+    height: 300px;
+    width: 19vw;
+}
+
+#slide1{ 
+    background-image: url(https://d1-invdn-com.akamaized.net/content/pic16b5d129d7e7a0d7d9fe097a9f2125a8.jpeg);   
+}
+
+#slide2{
+    width: 23vw !important; 
+    height: 400px !important;
+    background-image: url(https://static.billboard.com/files/2021/06/Midyear-Songs-List-2021-billboard-1500-1623161306-compressed.jpg);  
+}
+
+#slide3{
+    background-image: url(https://pbs.twimg.com/profile_images/1293912688393744386/qnnU4pYy_400x400.jpg);
+ }
+
+.button{
+    position: absolute;
+    width: 16vw;
+    height: 300px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#button2{
+    width: 23vw !important;
+    height: 400px !important;
+    background-color: transparent !important;
+}
+.button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+#slide-span1:target ~ .slide-image #slide1,
+#slide-span1:target ~ .slide-image #button1{
+    width:23vw;
+    height:400px;
+    background-color: transparent;
+}
+
+#slide-span2:target ~ .slide-image #slide2,
+#slide-span2:target ~ .slide-image #button2{
+    width:23vw;
+    height:400px;
+    background-color: transparent;
+}
+
+#slide-span3:target ~ .slide-image #slide3,
+#slide-span3:target ~ .slide-image #button3{
+    width:23vw;
+    height:400px;
+    background-color: transparent;
+}
+
+#slide-span1:target ~ .image-slide{
+    left:70%;
+}
+
+#slide-span2:target ~ .image-slide{
+    left:50%;
+}
+
+#slide-span3:target ~ .image-slide{
+    left:25%;
+}
+/*Carousel section CSS Ends*/
+
+
+/* Three vertical dots css in latest release section starts */
+.outer-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.three-dots:after {
+    cursor: pointer;
+    color: white;
+    content: '\2807';
+    font-size: 20px;
+    padding: 0 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a div {
+    padding: 2px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    background-color: white;
+    outline: none;
+    opacity: 0;
+    z-index: -1;
+    max-height: 0;
+    transition: opacity 0.1s, z-index 0.1s;
+  }
+  
+  .dropdown-container:focus {
+    outline: none;
+  }
+  
+  .dropdown a{
+      color: black;
+      font-size: 0.7em;
+  }
+
+  .dropdown-container:focus .dropdown {
+    opacity: 1;
+    z-index: 100;
+    max-height: 100vh;
+    width: 100px;
+    transition: opacity 0.2s, z-index 0.2s;
+  }
+/* Three vertical dots css in latest release section ends */
+
+/* Latest section css starts */
+.latest-release-inner{
+    height: 150px;
+    width: 400px;
+    padding: 1%;
+    padding-bottom: 2%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.latest-release-inner-1{
+    display: flex;
+    align-items: center;
+}
+#release1{
+    height: 150px;
+    width: 150px;
+}
+
+.latest-release-inner img{
+    padding-right: 20px;
+}
+/* Latest section css ends */
+
+/* Popular artist section css starts */
+#popular-artists-outer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-artists-inner{
+    height: 160px;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+}
+
+.popular-artists-inner img{
+    border-radius: 100px;
+}
+
+.popular-artists-inner img:hover{
+    filter: brightness(70%);
+
+}
+/* Popular artist section css ends */
+
+/* Station section css starts */
+#stations-outer{
+    margin-top: 20px;
+    padding: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 780px;
+    align-items: center;
+    background-color: #0f1642;
+}
+#stations-main{
+    height: 150px;
+    width: 150px;
+    background-image: url(Images/station.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stations-types{
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 80px;
+    margin-left: 4px;
+}
+
+#station-type-1{
+    background-image: url(Images/love.jpg);
+}
+
+#station-type-2{
+    background-image: url(Images/retro.jpg);
+}
+
+#station-type-3{
+    background-image: url(Images/chill.jpg);
+}
+
+#station-type-4{
+    background-image: url(Images/workout.jpg);
+}
+
+#station-type-5{
+    background-image: url(Images/rock.jpg);
+}
+
+#station-type-6{
+    background-image: url(Images/pop.jpg);
+}
+
+
+.types-inner{
+    height: 170px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .8s ease-in-out;
+}
+
+/* Station section css ends */
+
+/* Music Type Section css starts */
+#music-type-1{
+    background-image: url(Images/party.jpg);
+    margin-right: 24px;
+}
+
+#music-type-2{
+    background-image: url(Images/electronic.jpg);
+    margin-right: 24px;
+}
+
+#music-type-3{
+    background-image: url(Images/road-trip.jpg);
+}
+
+.types-inner:hover{
+    background-position: 100%;
+}
+/* Music Type Section css ends */
+
+/* English Music Section and Hindi Music Section(Used same css in both sections) css starts */
+.english-inner{
+    height: 150px;
+    width: 125px;
+    margin-right: 10px;
+    padding-bottom: 30px;
+}
+
+.english-inner img{
+    height: 90%;
+    width: 100%;
+}
+/* English Music Section and Hindi Music Section css ends */
+
+/* Music player section css begins */
+#music-p{
+    top:78%;
+    position: fixed;
+}
+#music-player{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: #282828;
+    z-index: 1;
+    justify-content: space-between;
+    }
+#music-player-inner1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#play-pause{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+#song-time{
+    padding-top: 20px;
+}
+.music-player-inner{
+    display: flex;
+    align-items: center;
+}
+/* Music player section css ends */
+
+/* Aligning aside section for queue section */
+aside{
+    top:15%;
+    left:70%;
+    position:fixed;
+    
+}
+
+/* Queue text in aside is made using select */
+aside select{
+    background-color: #0b1026;
+    border:0;
+    color:rgb(21, 121, 74);
+    font-size: 0.5em;
+    font-weight: bolder;
+     margin-left: 35%;
+}
+
+/* queue section css begins */
+#queue-outer{
+    width: 23vw;
+    height: 500px;
+    /* display: flex;
+    flex-direction: column; */
+    overflow-y:scroll;
+}
+
+.queue-inner1{
+    height: 100px;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.queue-inner2{
+    display: flex;
+    align-items: center;
+}
+
+.queue-inner2 img{
+    padding-right: 20px;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+/* queue section css ends */
+
+
+/* I have also added same css to single playlist page */
+/* Single Play List css Starts here */
+#single-playlist{
+    margin-left: 7%;
+}
+
+/* Playlist detail section begins */
+#detail-outer{
+    width:780px;
+    height:400px;
+    display: flex;
+    background-color: #131b40;
+    
+}
+
+#detail-outer button{
+    background: linear-gradient(to right,#532cb9,#7d39c0,#c247de);
+    border: 0;
+    color: white;
+}
+#detail-inner1{
+    height: 100%;
+    width: 330px;
+    background-image: url(Images/playlist1.jpg);
+    background-color: #131b40;
+    background-blend-mode: lighten;
+    box-shadow: 0px 0px 50px 40px  #131b40 inset;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#detail-inner2{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#span1{
+    margin-left: 75%;
+    margin-top: -20px;
+    font-size: 0.8em;
+}
+#detail-inner2 h5,p{
+    margin-top: -3%;
+}
+#detail-inner2 button{
+    height: 37px;
+     width: 150px ;
+}
+#span2{
+    margin-left: 250px;
+    margin-top: -25px;
+}
+#span3{
+    margin-top: 10px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+/* Playlist detail section ends */
+
+/* Playlist songs section begins */
+#playlist-songs-outer{
+  width: 780px;
+}
+
+.playlist-songs-inner1{
+    height: 110px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #191e32;
+    margin-bottom: 20px;
+}
+
+.playlist-songs-inner2{
+    display: flex;
+    align-items: center;
+}
+/* Playlist songs section ends */
+
+/* Playlist aside section css begins */
+#single-aside{
+    position: absolute;
+    left:68% !important;
+}
+
+.view-all{
+    margin-left: 48%;
+    font-size: 0.5em;
+    
+}
+
+#view-all2{
+    margin-left: 40%;
+    font-size: 0.5em;
+    
+}
+
+.similar-artist-inner{
+    padding-bottom: 0;
+}
+
+#recent-outer{
+    margin-left: 10%;
+}
+
+/* Playlist aside section css ends */
+
+/* Media queries index.html */
+@media screen and (max-width:1350px){
+    nav #horizontal-list #search{
+        padding-left: 40%;
+     }
+}
+
+@media screen and (max-width:1060px){
+    nav #horizontal-list #search{
+        padding-left: 30%;
+     }
+}
+
+@media screen and (max-width:880px){
+    nav #horizontal-list #search{
+        padding-left: 15%;
+     }
+}
+
+/* Media query for carousel */
+@media screen and (max-width:900px){
+    #queue{
+        display: none;
+    }
+    main{
+        width: 100vw;  
+        margin-left:5% ;
+    }
+    body{
+        margin-left: 0;
+    }
+    .slide-container{
+        width: 90vw;
+    }
+    .slide-div{
+        width:25vw;
+    }
+    .button{
+        width: 25vw;
+    }
+    #slide2{
+        width:30vw !important;
+    }
+    .slide-image{
+        width: 100%;
+        height: 60%;
+    }
+    #stations-outer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Single Playlist media queries */
+@media screen and (max-width:1250px) {
+    #single-aside{
+        margin-top: 10%;
+        position:relative;
+        left: 10% !important;;
+    }
+}

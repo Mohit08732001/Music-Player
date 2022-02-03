@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+
+     <!-- NavBar Html Begins (Use of horizontal unordered list)-->
+        <nav>
+            <ul id="horizontal-list" type="none">
+            <li><img src="https://www.alphansotech.com/wp-content/uploads/2021/01/how-jio-saavn-works.jpg" height="50px" width="100px"></li>
+            <li>Favourites</li>
+            <li id="search"><span id="light-bg-color"><i class="fas fa-search"></i><input type="text" placeholder="Search"><i class="fas fa-microphone"></i></span></li>
+            <li><i class="fas fa-bell"></i></li>
+            <li><img id="profile" src="https://avatarfiles.alphacoders.com/263/thumb-1920-263353.jpg" height="50px" width="50px"></li>  
+        </ul>
+        </nav>
+
+     <!-- NavBar Html Ends --> 
+        
+     <!-- Playlist on right side using aside section -->
+     <aside id="queue">
+            <h2>Queue  <select><option>Select</option><option>Playlist</option><option>Favourite Songs</option></select></h2>
+            
+            <div id="queue-outer">
+                <div class="queue-inner1">
+                    <div class="queue-inner2">
+                    <img src="Images/queue1.jpg" height="60px" width="60px">
+                    <span>Mirage<br>Else</span>
+                    </div>
+                    <div class="queue-inner2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-inner1">
+                    <div class="queue-inner2">
+                    <img src="Images/queue2.jpg" height="60px" width="60px">
+                    <span>StarBoy<br>Weeknd</span>
+                    </div>
+                    <div class="queue-inner2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-inner1">
+                    <div class="queue-inner2">
+                    <img src="Images/queue1.jpg" height="60px" width="60px">
+                    <span>StarBoy<br>Weeknd</span>
+                    </div>
+                    <div class="queue-inner2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-inner1">
+                    <div class="queue-inner2">
+                    <img src="Images/queue2.jpg" height="60px" width="60px">
+                    <span>StarBoy<br>Weeknd</span>
+                    </div>
+                    <div class="queue-inner2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-inner1">
+                    <div class="queue-inner2">
+                    <img src="Images/queue1.jpg" height="60px" width="60px">
+                    <span>Mirage<br>Else</span>
+                    </div>
+                    <div class="queue-inner2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-inner1">
+                    <div class="queue-inner2">
+                    <img src="Images/queue2.jpg" height="60px" width="60px">
+                    <span>StarBoy<br>Weeknd</span>
+                    </div>
+                    <div class="queue-inner2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-inner1">
+                    <div class="queue-inner2">
+                    <img src="Images/queue1.jpg" height="60px" width="60px">
+                    <span>StarBoy<br>Weeknd</span>
+                    </div>
+                    <div class="queue-inner2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-inner1">
+                    <div class="queue-inner2">
+                    <img src="Images/queue2.jpg" height="60px" width="60px">
+                    <span>StarBoy<br>Weeknd</span>
+                    </div>
+                    <div class="queue-inner2">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+               </div>
+        </aside>
+        <!-- Playlist section ends -->
+
+        <!-- Music Player Section which is fixed in bottom of screen -->
+        <section id="music-p">
+            <div id="music-player">
+                <div class="music-player-inner">
+                <img src="Images/onism.jpg" height="80px" width="80px">
+                <span>Onism &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <i class="far fa-heart"></i>
+                &nbsp;
+                <i class="fas fa-ban"></i>
+                    <br>John Lenon</span>
+                </div>  
+                <div class="music-player-inner" id="music-player-inner1">
+                    <div id="play-pause">
+                    <i class="fas fa-random fa-x"></i>&nbsp; &nbsp; &nbsp; &nbsp;
+                    <i class="fas fa-step-backward fa-x"></i>&nbsp; &nbsp; &nbsp; &nbsp;
+                    <i class="far fa-pause-circle fa-2x"></i>&nbsp; &nbsp; &nbsp; &nbsp;
+                    <i class="fas fa-step-forward fa-x"></i><br>
+                </div>
+                    <div id="song-time"><input type="range" style="width: 400px;"></div>
+                </div> 
+                
+                <div class="music-player-inner">
+                    <i class="fas fa-bars fa-x"></i>&nbsp; &nbsp; &nbsp; &nbsp;
+                    <i class="fas fa-camera-retro fa-x"></i>&nbsp; &nbsp; &nbsp; &nbsp;
+                    <i class="fas fa-volume-up fa-x"></i>&nbsp; &nbsp; 
+                    <input type="range" style="width: 100px;">&nbsp; &nbsp; &nbsp; &nbsp;
+                    <i class="fas fa-expand fa-x"></i>&nbsp; &nbsp; &nbsp; &nbsp;
+
+                </div>
+                </div>
+                
+        </section>
+        <!-- Music player section ends -->
+
+        <main>
+
+        <!-- Section for making or carousel -->
+        <section id="carousel">
+          <div class="slide-container">
+              <span class="slide-span" id="slide-span1"></span>
+              <span class="slide-span" id="slide-span3"></span>
+              <span class="slide-span" id="slide-span3"></span>
+
+              <div class="slide-image">
+                  <div class="slide-div" id="slide1">
+                      <a href="#slide-span1" class="button" id="button1"></a>
+                  </div>
+                  <div class="slide-div" id="slide2">
+                    <a href="#slide-span2" class="button" id="button2"></a>
+                </div>
+                <div class="slide-div" id="slide3">
+                    <a href="#slide-span3" class="button" id="button3"></a>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!-- Carousel Section Ends -->
+
+        <!-- Latest Release Section Starts -->
+        <section id="latest-release">
+            <h2>Latest Release</h2>
+            <div id="latest-release-outer" class="outer-div">
+                <div class="latest-release-inner">
+                    <div class="latest-release-inner-1">
+                    <img src="Images/onism.jpg" height="150px" width="150px">
+                    <span>Weeknd<br>Aug 11,2017</span>
+                   </div>
+                   <!-- Three vertical dots dropdown html begins -->
+                   <div class="dropdown-container" tabindex="-1">
+                       <div class="three-dots"></div>
+                       <div class="dropdown">
+                         <a href="#"><div><i class="fas fa-play"></i>&nbsp; &nbsp;Play Now</div></a>
+                         <hr>
+                         <a href="#"><div><i class="fas fa-plus"></i>&nbsp; &nbsp;Add to Queue</div></a>
+                         <hr>
+                         <a href="#"><div><i class="fas fa-bars"></i>&nbsp;Add to Favourites</div></a>
+                         <hr>
+                         <a href="#"><div><i class="fas fa-info-circle"></i>&nbsp; &nbsp;Get Info</div></a>
+                       </div>
+               </div>
+               <!-- Three vertical dots dropdown html ends -->
+               </div>
+
+               <div class="latest-release-inner">
+                <div class="latest-release-inner-1">
+                <img src="Images/onism.jpg" height="150px" width="150px">
+                <span>Weeknd<br>Aug 11,2017</span>
+               </div>
+               <!-- Three vertical dots dropdown html begins -->
+               <div class="dropdown-container" tabindex="-1">
+                   <div class="three-dots"></div>
+                   <div class="dropdown">
+                     <a href="#"><div><i class="fas fa-play"></i>&nbsp; &nbsp;Play Now</div></a>
+                     <hr>
+                     <a href="#"><div><i class="fas fa-plus"></i>&nbsp; &nbsp;Add to Queue</div></a>
+                     <hr>
+                     <a href="#"><div><i class="fas fa-bars"></i>&nbsp;Add to Favourites</div></a>
+                     <hr>
+                     <a href="#"><div><i class="fas fa-info-circle"></i>&nbsp; &nbsp;Get Info</div></a>
+                   </div>
+           </div>
+           <!-- Three vertical dots dropdown html ends -->
+           </div>
+
+            <div class="latest-release-inner">
+                 <div class="latest-release-inner-1">
+                 <img src="Images/onism.jpg" height="150px" width="150px">
+                 <span>Onism<br>Aug 11,2017</span>
+                </div>
+                <!-- Three vertical dots dropdown html begins -->
+                <div class="dropdown-container" tabindex="-1">
+                    <div class="three-dots"></div>
+                    <div class="dropdown">
+                      <a href="#"><div><i class="fas fa-play"></i>&nbsp; &nbsp;Play Now</div></a>
+                      <hr>
+                      <a href="#"><div><i class="fas fa-plus"></i>&nbsp; &nbsp;Add to Queue</div></a>
+                      <hr>
+                      <a href="#"><div><i class="fas fa-bars"></i>&nbsp;Add to Favourites</div></a>
+                      <hr>
+                      <a href="#"><div><i class="fas fa-info-circle"></i>&nbsp; &nbsp;Get Info</div></a>
+                    </div>
+            </div>
+            <!-- Three vertical dots dropdown html ends -->
+            </div>
+
+           <div class="latest-release-inner">
+                 <div class="latest-release-inner-1">
+                 <img src="Images/onism.jpg" height="150px" width="150px">
+                 <span>Onism<br>Aug 11,2017</span>
+                </div> 
+                <!-- Three vertical dots dropdown html begins -->
+                <div class="dropdown-container" tabindex="-1">
+                    <div class="three-dots"></div>
+                    <div class="dropdown">
+                      <a href="#"><div><i class="fas fa-play"></i>&nbsp; &nbsp;Play Now</div></a>
+                      <hr>
+                      <a href="#"><div><i class="fas fa-plus"></i>&nbsp; &nbsp;Add to Queue</div></a>
+                      <hr>
+                      <a href="#"><div><i class="fas fa-bars"></i>&nbsp;Add to Favourites</div></a>
+                      <hr>
+                      <a href="#"><div><i class="fas fa-info-circle"></i>&nbsp; &nbsp;Get Info</div></a>
+                    </div>
+            </div>
+            <!-- Three vertical dots dropdown html ends -->
+            </div>
+        </section>
+        <!-- Latest Release Section Ends -->
+
+        <!-- Popular Artists Section Begins (On click single playlist screen appears) -->
+        <section id="popular-artists">
+            <h2>Popular Artists</h2>
+            <div id="popular-artists-outer" class="outer-div">
+            <div class="popular-artists-inner" id="artist1">
+              <a href="SinglePlaylist.html"> <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTM5ODkxNzYyODU1NDIwOTM4/ed-sheeran-gettyimages-494227430_1600jpg.jpg" height="150px" width="150px">
+              </a> 
+                <p>Ed Sheeran</p>
+            </div>
+            <div class="popular-artists-inner" id="artist2">
+                <a href="SinglePlaylist.html">   <img src="https://miro.medium.com/max/471/0*_YcTdWCkDbiz2-yC.png" height="150x" width="150px">
+                 </a><p>ColdPlay</p>
+            </div>
+            <div class="popular-artists-inner" id="artist3">
+                <a href="SinglePlaylist.html">    <img src="https://static.wikia.nocookie.net/best-music-and-songs/images/8/86/Linkin_Park.jpg/revision/latest/top-crop/width/360/height/450?cb=20200623140756" height="150x" width="150px">
+               </a> <p>Linkin Park</p>
+            </div>
+            <div class="popular-artists-inner" id="artist4">
+                <a href="SinglePlaylist.html">   <img src="https://i.scdn.co/image/ab6761610000e5eb894f1e165ee9c04daa82a5b6" height="150x" width="150px">
+               </a> <p>Charlie Puth</p>
+            </div>
+            <div class="popular-artists-inner" id="artist5">
+                <a href="SinglePlaylist.html">   <img src="https://a10.gaanacdn.com/gn_img/artists/9En3pqeWXD/En3pqG29WX/size_l_1560146403.jpg" height="150x" width="150px">
+                </a> <p>Imagine Dragons</p>
+            </div>
+            </div>
+        </section>
+        <!-- Popular Artists Section Ends -->
+
+        <!-- Different type of stations in music Section begins -->
+        <section id="stations">
+        <div class="outer-div" id="stations-outer">
+            <div id="stations-main" class="inner-div"><h2>Stations</h2></div>
+            <div class="stations-types inner-div" id="station-type-1"><h3>Love</h3></div>
+            <div class="stations-types inner-div" id="station-type-2"><h3>Retro</h3></div>
+            <div class="stations-types inner-div" id="station-type-3"><h3>Chill</h3></div>
+            <div class="stations-types inner-div" id="station-type-4"><h3>Workout</h3></div>
+            <div class="stations-types inner-div" id="station-type-5"><h3>Rock</h3></div>
+            <div class="stations-types inner-div" id="station-type-6"><h3>Pop</h3></div>
+        </div>
+        </section>
+        <!-- Different type of stations in music Section ends -->
+
+        <!-- Music Type Section Begins -->
+        <section id="music-types">
+        <div class="outer-div" id="types-outer">
+        <div class="types-inner inner-div" id="music-type-1"><h2>Party</h2></div>
+        <div class="types-inner inner-div" id="music-type-2"><h2>Electronic</h2></div>
+        <div class="types-inner inner-div" id="music-type-3"><h2>Road Trip</h2></div>
+        </div>
+        </section>
+        <!-- Music Type Section Ends -->
+
+        <!-- English Music Section Begins -->
+        <section id="english-music">
+            <h2>Latest English</h2>
+            <div class="outer-div" id="english-outer">
+            <div id="english-1" class="english-inner">
+                <img src="Images/english1.jpg">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-2" class="english-inner">
+                <img src="Images/english2.png">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-3" class="english-inner">
+                <img src="Images/english3.png">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-4" class="english-inner">
+                <img src="Images/english4.jpg">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-5" class="english-inner">
+                <img src="Images/english5.jpeg">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-6" class="english-inner">
+                <img src="Images/english2.png">
+                Onism <br> Aug 11,2017
+            </div>
+            </div>
+        </section>
+        <!-- English Music Section Ends -->
+
+        <!-- Hindi Music Section Begins -->
+        <section id="hindi-music">
+            <h2>Latest Hindi</h2>
+            <div class="outer-div" id="english-outer">
+            <div id="english-1" class="english-inner">
+                <img src="Images/english1.jpg">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-2" class="english-inner">
+                <img src="Images/english2.png">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-3" class="english-inner">
+                <img src="Images/english3.png">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-4" class="english-inner">
+                <img src="Images/english4.jpg">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-5" class="english-inner">
+                <img src="Images/english5.jpeg">
+                Onism <br> Aug 11,2017
+            </div>
+            <div id="english-6" class="english-inner">
+                <img src="Images/english2.png">
+                Onism <br> Aug 11,2017
+            </div>
+            </div>
+        </section>
+       <!-- Hindi Music Section Ends -->
+    </main>
+   
+    
+    </body>
+</html>
